@@ -3,7 +3,7 @@
 
 using namespace std;
 
-volatile bool a = false;
+
 
 int game(int maxnum)
 {
@@ -11,7 +11,7 @@ int game(int maxnum)
     int randomNumber = rand() % maxnum;
     int guess;
     volatile int numberOfGuesses = 0;
-
+    volatile bool a = false;
     while (!a)
     {
         cout << "Guess a number between in the range you have provided" << endl;
