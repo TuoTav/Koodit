@@ -13,8 +13,8 @@ Kerrostalo::Kerrostalo()
 
 }
 
-double Kerrostalo::laskeKulutus(double kerrosmaara)
+double Kerrostalo::laskeKulutus(double hinta)
 {
-    double tulos=+eka.laskeKulutus(1)+(toka.laskeKulutus(1))*kerrosmaara;
+    double tulos=+(eka.laskeKulutus(1)+toka.laskeKulutus(1)+kolmas.laskeKulutus(1))*hinta;
     return tulos;
 }
