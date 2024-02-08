@@ -13,10 +13,10 @@ void Katutaso::maaritaAsunnot()
     as2.maarita(2,100);
     cout<<"Maaritetaan katutason kerrokselta perittyja asuntoja"<<endl;
 }
-double Katutaso::laskeKulutus(double asluku)
+double Katutaso::laskeKulutus(double hinta)
 {
 
-    double tulos=(as1.laskekulutus(1)+as2.laskekulutus(1))*asluku;
+    double tulos=(as1.laskekulutus(1)+as2.laskekulutus(1))*hinta;
 
     return tulos;
 }

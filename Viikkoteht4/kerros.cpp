@@ -15,9 +15,9 @@ void Kerros::maaritaAsunnot()
     as4.maarita(2,100);
 
 }
-double Kerros::laskeKulutus(double asluku)
+double Kerros::laskeKulutus(double hinta)
 {
 
-    double tulos=(as1.laskekulutus(1)+as2.laskekulutus(1)+as3.laskekulutus(1)+as4.laskekulutus(1))*asluku;
+    double tulos=(as1.laskekulutus(1)+as2.laskekulutus(1)+as3.laskekulutus(1)+as4.laskekulutus(1))*hinta;
     return tulos;
 }
