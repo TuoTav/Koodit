@@ -5,10 +5,10 @@ class Kerros
 {
 public:
     Kerros();
-    Asunto* as1;
-    Asunto* as2;
-    Asunto* as3;
-    Asunto* as4;
+    Asunto as1;
+    Asunto as2;
+    Asunto as3;
+    Asunto as4;
     virtual void maaritaAsunnot();
     virtual double laskeKulutus(double);
 };

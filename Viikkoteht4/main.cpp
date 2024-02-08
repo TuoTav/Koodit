@@ -5,10 +5,10 @@ using namespace std;
 int main()
 {
 
-    Kerrostalo* K;
-    K= new Kerrostalo();
-    cout<<"Kerrostalon kulutus= "<<K->laskeKulutus(1)<<endl;
-    delete K;
+    Kerrostalo K;
+
+    cout<<"Kerrostalon kulutus= "<<K.laskeKulutus(1)<<endl;
+
 
 
 
