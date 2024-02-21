@@ -20,7 +20,7 @@ void Calculator::numberClickHandler()
 
     if(state==1)
     {
-    number1=joo.last(1);
+    number1=number1+joo.last(1);
         QLineEdit lineEdit;
 
         qint32 value = number1.toInt();
@@ -30,7 +30,7 @@ void Calculator::numberClickHandler()
 
     if(state==2)
     {
-    number2=joo.last(1);
+    number2=number2+joo.last(1);
         QLineEdit lineEdit;
 
         qint32 value = number2.toInt();
@@ -143,6 +143,8 @@ void Calculator::resetLineEdits()
     ui->line2->clear();
     ui->lineresult->clear();
     state=1;
+    number1=" ";
+    number2=" ";
 }
 
 
